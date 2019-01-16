@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Validation</title>
+</head>
+<body>
+    <input type="text" name="" id="myform" placeholder="Search here"><br>
+    <button onclick="myValidation()">Search</button>
+    <script>
+        function myValidation(){
+            let myValue = document.getElementById("myform").value;
+            if(isNaN(myValue)||myValue<1||myValue>20){
+                alert("Not a valid input");
+            }
+            else{
+                console.log("Done");
+            }
+        }
+    </script>
+</body>
+</html>

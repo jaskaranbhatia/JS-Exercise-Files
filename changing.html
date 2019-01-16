@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Changing</title>
+</head>
+<body>
+    <p>Hello everyone</p>
+    <p>It's a nice day</p>
+    <p>It's cold outside</p>
+    <script>
+        //querySelector return the first element while querySelectorAll returns an array
+        const myPelements = document.querySelectorAll('p');
+        myPelements.forEach((p)=>{
+            p.textContent = "I am changed"
+        });
+    </script>
+</body>
+</html>
